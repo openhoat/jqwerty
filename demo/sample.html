@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>jQwerty Demo</title>
+  <!--
+  <script src="../src/jqwerty.js"></script>
+  -->
   <script src="jqwerty.min.js"></script>
   <style>
     html {
@@ -32,12 +35,18 @@
   <h2>jQwerty Demo</h2>
 
   <p>Hello world!</p>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
 </section>
 <script>
   $(function () {
     $('p').insertAdjacentHTML('afterend', '<a id="link" href="#">cickme</a>');
     $('#link').onclick = function () {
-      $('h2').toggle2('orange', 'blue');
+      $('h2').toggleClasses('orange', 'blue');
+      $('li').toggleClasses('orange', 'blue');
     };
   });
 </script>
