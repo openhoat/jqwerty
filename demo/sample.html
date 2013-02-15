@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQwerty Demo</title>
+  <script src="../dist/jqwerty.min.js"></script>
+  <style>
+    html {
+      background-color: white;
+    }
+
+    body {
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 20px;
+      background-color: #eee;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border-radius: 10px;
+    }
+
+    .orange {
+      color: orange;
+    }
+
+    .blue {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <h2>jQwerty Demo</h2>
+
+  <p>Hello world!</p>
+</section>
+<script>
+  $(function () {
+    $('p').insertAdjacentHTML('afterend', '<a id="link" href="#">cickme</a>');
+    $('#link').onclick = function () {
+      $('h2').toggle2('orange', 'blue');
+    };
+  });
+</script>
+</body>
+</html>

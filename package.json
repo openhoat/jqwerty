@@ -1,0 +1,28 @@
+{
+  "name":"jqwerty",
+  "version":"0.0.1",
+  "description":"Light javascript library",
+  "homepage":"https://github.com/openhoat/jqwerty",
+  "author":{
+    "name":"Olivier Penhoat",
+    "email":"openhoat@gmail.com"
+  },
+  "repository":{
+    "type":"git",
+    "url":"git://github.com/openhoat/jqwerty.git"
+  },
+  "bugs":{
+    "url":"https://github.com/openhoat/jqwerty/issues"
+  },
+  "licenses":[
+    {
+      "type":"EUPL",
+      "url":"https://github.com/openhoat/jqwerty/blob/master/EUPL-1.1.txt"
+    }
+  ],
+  "devDependencies":{
+    "grunt":"0.4.0rc8",
+    "grunt-contrib-clean":"0.4.0rc6",
+    "grunt-contrib-uglify": "0.1.1rc6"
+  }
+}
