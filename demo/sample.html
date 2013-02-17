@@ -40,10 +40,11 @@
 </section>
 <script>
   $(function () {
-    $('p').insertAdjacentHTML('afterend', '<a id="link" href="#">cickme</a>');
+    $('p').insertAdjacentHTML('afterend', '<a id="link" href="#">click me</a>');
     $('#link').onclick = function () {
       $('h2').toggleClasses('orange', 'blue');
       $('li').toggleClasses('orange', 'blue');
+      return false;
     };
   });
 </script>
