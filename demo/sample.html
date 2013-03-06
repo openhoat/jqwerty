@@ -2,33 +2,7 @@
 <html>
 <head>
   <title>jQwerty Demo</title>
-  <script src="jqwerty.min.js"></script>
-  <!--
-  <script src="../src/jqwerty.js"></script>
-  -->
-  <style>
-    html {
-      background-color: white;
-    }
-
-    body {
-      width: 400px;
-      margin: 0 auto;
-      margin-top: 20px;
-      background-color: #eee;
-      padding: 10px 20px;
-      font-size: 1.2em;
-      border-radius: 10px;
-    }
-
-    .orange {
-      color: orange;
-    }
-
-    .blue {
-      color: blue;
-    }
-  </style>
+  <link rel="stylesheet" href="sample.css" media="screen"/>
 </head>
 <body>
 <section>
@@ -41,17 +15,10 @@
     <li>Item 3</li>
   </ul>
 </section>
-<script>
-  $(function () {
-    $('li').insertAfterBegin('This is ');
-    $('li').insertBeforeEnd(' of the list');
-    $('p').insertAfterEnd('<a id="link" href="#">click me</a>');
-    $('#link').onclick = function () {
-      $('h2').toggle2('orange', 'blue');
-      $('li').toggle2('orange', 'blue');
-      return false;
-    };
-  });
-</script>
+<script src="jqwerty.min.js"></script>
+<!--
+<script src="../src/jqwerty.js"></script>
+-->
+<script src="sample.js"></script>
 </body>
 </html>
