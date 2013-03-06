@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>jQwerty Demo</title>
-  <script src="jqwerty.min.js"></script>
+  <!--<script src="jqwerty.min.js"></script>-->
+  <script src="../src/jqwerty.js"></script>
   <style>
     html {
       background-color: white;
@@ -40,10 +41,12 @@
 </section>
 <script>
   $(function () {
-    $('p').insertAdjacentHTML('afterend', '<a id="link" href="#">click me</a>');
+    $('li').insertAfterBegin('This is ');
+    $('li').insertBeforeEnd(' of the list');
+    $('p').insertAfterEnd('<a id="link" href="#">click me</a>');
     $('#link').onclick = function () {
-      $('h2').toggleClasses('orange', 'blue');
-      $('li').toggleClasses('orange', 'blue');
+      $('h2').toggle2('orange', 'blue');
+      $('li').toggle2('orange', 'blue');
       return false;
     };
   });
